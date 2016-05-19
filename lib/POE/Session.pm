@@ -44,6 +44,7 @@ sub _define_assert {
     local $^W = 0;
 
     next if defined *{"ASSERT_$name"}{CODE};
+    no warnings qw(once);
     if (defined *{"POE::Kernel::ASSERT_$name"}{CODE}) {
       eval(
         "sub ASSERT_$name () { " .
@@ -67,6 +68,7 @@ sub _define_trace {
 
   foreach my $name (@_) {
     next if defined *{"TRACE_$name"}{CODE};
+    no warnings qw(once);
     if (defined *{"POE::Kernel::TRACE_$name"}{CODE}) {
       eval(
         "sub TRACE_$name () { " .

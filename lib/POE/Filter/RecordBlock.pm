@@ -31,9 +31,12 @@ sub new {
   my %params = @_;
 
   # Block size
-  croak "BlockSize must be greater than 0" unless (
-    defined($params{BlockSize}) && ($params{BlockSize} > 0)
-  );
+  {
+    no warnings qw(numeric);
+    croak "BlockSize must be greater than 0" unless (
+      defined($params{BlockSize}) && ($params{BlockSize} > 0)
+    );
+  }
   my $block_size = $params{BlockSize};
 
   # check put
@@ -125,6 +128,7 @@ sub put_pending {
 
 sub blocksize {
   my ($self, $size) = @_;
+  no warnings qw(numeric);
   if (defined($size) && ($size > 0)) {
     $self->[BLOCKSIZE] = $size;
   }

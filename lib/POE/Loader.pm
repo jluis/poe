@@ -15,6 +15,7 @@ sub import {
     }
   }
 
+  no warnings qw(ambiguous);
   croak "could not load the following module(s): @failed" if @failed;
 }
 

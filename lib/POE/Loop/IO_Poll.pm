@@ -73,6 +73,8 @@ my $start_time = monotime();
 #------------------------------------------------------------------------------
 # Loop construction and destruction.
 
+no warnings qw(redefine);
+
 sub loop_initialize {
   my $self = shift;
   %poll_fd_masks = ();

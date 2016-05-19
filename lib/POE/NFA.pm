@@ -53,6 +53,7 @@ sub _define_trace {
 
   foreach my $name (@_) {
     next if defined *{"TRACE_$name"}{CODE};
+    no warnings qw(once);
     if (defined *{"POE::Kernel::TRACE_$name"}{CODE}) {
       eval(
         "sub TRACE_$name () { " .
