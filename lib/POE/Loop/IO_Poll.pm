@@ -28,6 +28,7 @@ sub skip_tests {
 =cut
 
 use strict;
+use warnings;
 
 # Be sure we're using a contemporary version of IO::Poll.  There were
 # issues with certain versions of IO::Poll prior to 0.05.  The latest

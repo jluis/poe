@@ -10,6 +10,7 @@
 package POE::Filter::HTTPD;
 
 use strict;
+use warnings;
 use POE::Filter;
 
 use vars qw($VERSION @ISA);

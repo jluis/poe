@@ -9,6 +9,7 @@ $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)
 package POE::Kernel;
 
 use strict;
+use warnings;
 
 # A local copy of the queue so we can manipulate it directly.
 my $kr_queue;

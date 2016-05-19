@@ -6,6 +6,7 @@ use vars qw($VERSION);
 $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)
 
 use strict;
+use warnings;
 
 use Config;
 use POSIX;

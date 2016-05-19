@@ -1,6 +1,7 @@
 package POE::Wheel::Run;
 
 use strict;
+use warnings;
 
 use vars qw($VERSION @ISA);
 $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)

@@ -10,6 +10,7 @@ $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)
 package POE::Kernel;
 
 use strict;
+use warnings;
 
 ### Map session IDs to sessions.  Map sessions to session IDs.
 ### Maintain a sequence number for determining the next session ID.

@@ -10,6 +10,7 @@ $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)
 package POE::Kernel;
 
 use strict;
+use warnings;
 
 use POE::Pipe::OneWay;
 use POE::Resource::FileHandles;

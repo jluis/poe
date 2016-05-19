@@ -9,6 +9,7 @@ $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)
 package POE::Kernel;
 
 use strict;
+use warnings;
 
 # Map stringy sessions to their references for _data_ses_resolve.
 my %kr_session_refs;

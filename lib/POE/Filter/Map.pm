@@ -3,6 +3,7 @@
 package POE::Filter::Map;
 
 use strict;
+use warnings;
 use POE::Filter;
 
 use vars qw($VERSION @ISA);

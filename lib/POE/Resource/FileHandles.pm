@@ -10,6 +10,7 @@ $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)
 package POE::Kernel;
 
 use strict;
+use warnings;
 
 use Fcntl qw(F_GETFL F_SETFL O_NONBLOCK);
 use IO::Handle ();

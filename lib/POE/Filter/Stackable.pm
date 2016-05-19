@@ -9,6 +9,7 @@
 package POE::Filter::Stackable;
 
 use strict;
+use warnings;
 use POE::Filter;
 
 use vars qw($VERSION @ISA);

@@ -1,6 +1,7 @@
 package POE::Driver;
 
 use strict;
+use warnings;
 
 use vars qw($VERSION);
 $VERSION = '1.367'; # NOTE - Should be #.### (three decimal places)

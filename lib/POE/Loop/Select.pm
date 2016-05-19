@@ -4,6 +4,7 @@
 package POE::Loop::Select;
 
 use strict;
+use warnings;
 
 # Include common signal handling.
 use POE::Loop::PerlSignals;

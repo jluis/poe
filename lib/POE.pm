@@ -3,6 +3,7 @@
 package POE;
 
 use strict;
+use warnings;
 use Carp qw( croak );
 
 use vars qw($VERSION);

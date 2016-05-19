@@ -1,6 +1,7 @@
 package POE::Filter::Line;
 
 use strict;
+use warnings;
 use POE::Filter;
 
 use vars qw($VERSION @ISA);
